@@ -172,8 +172,8 @@ size_t AUDIO_ogg_read( void *ptr, size_t size, size_t read, void *memory_ptr )
 	seof = memory->size - memory->position;
 
 	pos = ( ( read * size ) < seof ) ?
-		  pos = read * size :
-		  pos = seof;
+		  read * size :
+		  seof;
 
 	if( pos )
 	{
@@ -198,8 +198,8 @@ int AUDIO_ogg_seek( void *memory_ptr, ogg_int64_t offset, int stride )
 		case SEEK_SET:
 		{
 			pos = ( memory->size >= offset ) ?
-				  pos = ( unsigned int )offset :
-				  pos = memory->size;
+				  ( unsigned int )offset :
+				  memory->size;
 
 			memory->position = pos;
 
@@ -211,8 +211,8 @@ int AUDIO_ogg_seek( void *memory_ptr, ogg_int64_t offset, int stride )
 			unsigned int seof = memory->size - memory->position;
 
 			pos = ( offset < seof ) ?
-				  pos = ( unsigned int )offset :
-				  pos = seof;
+				  ( unsigned int )offset :
+				  seof;
 
 			memory->position += pos;
 
