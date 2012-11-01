@@ -31,6 +31,7 @@ as being the original software.
 	\brief Function prototypes and definitions to use with the MEMORY structure.
 */
 
+#include "gfx_types.h" /* defines MAX_PATH */
 
 //! Structure that allows you to manipulate memory stream.
 typedef struct

@@ -107,6 +107,7 @@ framework can provide.
 #define GFX_VERSION_MINOR	0
 #define GFX_VERSION_PATCH	23
 
+#include "gfx_types.h" /* used by memory.h */
 
 #ifdef __IPHONE_4_0
 
@@ -197,7 +198,6 @@ framework can provide.
 #include <unistd.h>
 
 #include "thread.h"
-#include "types.h"
 #include "matrix.h"
 #include "vector.h"
 #include "utils.h"
