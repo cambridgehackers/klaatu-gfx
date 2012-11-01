@@ -21,8 +21,8 @@ as being the original software.
 
 */
 
-#ifndef TYPES_H
-#define TYPES_H
+#ifndef GFX_TYPES_H
+#define GFX_TYPES_H
 
 /*!
 	\file types.h
