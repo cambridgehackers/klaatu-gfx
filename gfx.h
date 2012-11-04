@@ -150,7 +150,7 @@ framework can provide.
 	#include "GLES2/gl2.h"
 	#include "GLES2/gl2ext.h"
 
-	#include "png/png.h"
+	#include "png.h"
 
 	#include "zlib/zlib.h"
 	#include "zlib/unzip.h"
@@ -168,10 +168,10 @@ framework can provide.
 	#include "bullet/btGImpactCollisionAlgorithm.h"
 	#include "bullet/btBulletWorldImporter.h"
 
-	#include "recast/Recast.h"
-	#include "detour/DetourDebugDraw.h"
-	#include "detour/DetourNavMesh.h"
-	#include "detour/DetourNavMeshBuilder.h"
+	#include "Recast.h"
+	#include "DetourDebugDraw.h"
+	#include "DetourNavMesh.h"
+	#include "DetourNavMeshBuilder.h"
 
 	#include "ttf/stb_truetype.h"
 
