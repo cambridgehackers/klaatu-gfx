@@ -175,8 +175,8 @@ framework can provide.
 
 	#include "ttf/stb_truetype.h"
 
-	#include "openal/al.h"
-	#include "openal/alc.h"
+	#include "AL/al.h"
+	#include "AL/alc.h"
 
 	#include "vorbis/vorbisfile.h"
 
