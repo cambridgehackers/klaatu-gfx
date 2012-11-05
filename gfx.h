@@ -152,8 +152,8 @@ framework can provide.
 
 	#include "png.h"
 
-	#include "zlib/zlib.h"
-	#include "zlib/unzip.h"
+	#include "zlib.h"
+	#include "contrib/minizip/unzip.h"
 
 	#include "NvTriStrip.h"
 
