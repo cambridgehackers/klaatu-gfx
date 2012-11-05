@@ -82,9 +82,11 @@ SOUNDBUFFER *SOUNDBUFFER_load( char *name, MEMORY *memory )
 			while( ( count = ov_read( soundbuffer->file,
 									  start,
 									  MAX_CHUNK_SIZE,
+#if 0 // sio2 lib had int bigendianp,int word,int sgned
 									  0,
 									  2,
 									  1,
+#endif
 									  &bit ) ) > 0 ) start += count;
 
 			alGenBuffers( 1, &soundbuffer->bid[ 0 ] );
@@ -187,9 +189,11 @@ unsigned char SOUNDBUFFER_decompress_chunk( SOUNDBUFFER *soundbuffer, unsigned i
 		int count = ov_read( soundbuffer->file,
 							 buffer + size,
 							 MAX_CHUNK_SIZE - size,
+#if 0 // sio2 lib had int bigendianp,int word,int sgned
 							 0,
 							 2,
 							 1,
+#endif
 							 &bit );
 							 
 		if( count > 0 ) size += count;
