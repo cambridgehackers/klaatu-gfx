@@ -155,18 +155,18 @@ framework can provide.
 	#include "zlib/zlib.h"
 	#include "zlib/unzip.h"
 
-	#include "nvtristrip/NvTriStrip.h"
+	#include "NvTriStrip.h"
 
-	#include "bullet/btAlignedAllocator.h"
-	#include "bullet/btBulletDynamicsCommon.h"
-	#include "bullet/btSoftRigidDynamicsWorld.h"
-	#include "bullet/btSoftBodyRigidBodyCollisionConfiguration.h"
-	#include "bullet/btShapeHull.h"
-	#include "bullet/btSoftBodyHelpers.h"
-	#include "bullet/btSoftBody.h"
-	#include "bullet/btGImpactShape.h"
-	#include "bullet/btGImpactCollisionAlgorithm.h"
-	#include "bullet/btBulletWorldImporter.h"
+	#include "LinearMath/btAlignedAllocator.h"
+	#include "btBulletDynamicsCommon.h"
+	#include "BulletSoftBody/btSoftRigidDynamicsWorld.h"
+	#include "BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.h"
+	#include "BulletCollision/CollisionShapes/btShapeHull.h"
+	#include "BulletSoftBody/btSoftBodyHelpers.h"
+	#include "BulletSoftBody/btSoftBody.h"
+	#include "BulletCollision/Gimpact/btGImpactShape.h"
+	#include "BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h"
+	#include "btBulletWorldImporter.h"
 
 	#include "Recast.h"
 	#include "DetourDebugDraw.h"
@@ -178,7 +178,7 @@ framework can provide.
 	#include "AL/al.h"
 	#include "AL/alc.h"
 
-	#include "vorbis/vorbisfile.h"
+	#include "ivorbisfile.h"
 
 
 	extern PFNGLBINDVERTEXARRAYOESPROC glBindVertexArrayOES;
