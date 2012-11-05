@@ -22,6 +22,7 @@ as being the original software.
 */
 
 #include "gfx.h"
+#include <math.h>
 
 
 /*!
@@ -256,8 +257,8 @@ void FONT_print( FONT *font, float x, float y, char *text, vec4 *color )
 			
 			stbtt_bakedchar *bakedchar = font->character_data + ( *text - font->first_character );
 			
-			int round_x = STBTT_ifloor( x + bakedchar->xoff );
-			int round_y = STBTT_ifloor( y - bakedchar->yoff );
+			int round_x = (int) floor( x + bakedchar->xoff );
+			int round_y = (int) floor( y - bakedchar->yoff );
 			
 			quad.x0 = ( float )round_x;
 			quad.y0 = ( float )round_y;

@@ -173,7 +173,7 @@ framework can provide.
 	#include "DetourNavMesh.h"
 	#include "DetourNavMeshBuilder.h"
 
-	#include "ttf/stb_truetype.h"
+	#include "RecastDemo/Contrib/stb_truetype.h"
 
 	#include "AL/al.h"
 	#include "AL/alc.h"
